@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/found/found",
+    "pages/planning/planning",
+    "pages/me/me",
+    "pages/explore/explore",
+    "pages/destination/destination",
+    "pages/poi_list/poi_list",
+    "pages/trip_list/trip_list",
+    "pages/waypoint/waypoint",
+    "pages/user/user",
+    "pages/trip/trip"
+  ],
+  "usingComponents": {
+    "cu-custom":"/colorui/components/cu-custom"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#4abdcc",
+    "navigationBarTitleText": "行走赣鄱",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b0b0b0",
+    "selectedColor": "#4abdcc",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index_normal.png",
+        "selectedIconPath": "images/index_pressed.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "/images/paper-plane.png",
+        "selectedIconPath": "/images/paper-plane-filled.png",
+        "text": "去发现"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user-filled.png",
+        "text": "我"
+      }
+  ]
+  },
+  "debug": true
+}

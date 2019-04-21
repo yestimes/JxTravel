@@ -1,0 +1,53 @@
+<view class="cu-card article">
+  <view class="cu-item shadow">
+    <view class="content">
+      <view class="desc">
+        <view class="text-content"> {{travelInfo.abstract}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="cu-timeline" wx:for="{{planning}}" >
+
+  <view class="cu-time">第{{index + 1}}天</view>
+  
+  <view class=" cu-item text-green content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">描述</view>
+      </view>
+      <view class="margin-top">"{{item.description}}"</view>
+  </view>
+
+  <view class=" cu-item text-yellow content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">午饭</view>
+      </view>
+      <view class="margin-top">
+        {{item.dinning}}
+      </view>
+  </view>
+
+  <view class=" cu-item text-black content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">住宿</view>
+      </view>
+      <view class="margin-top">
+        {{item.accommodation}}
+      </view>
+  </view>
+
+   
+  <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">景点</view>
+  </view>
+  <view class="cu-item text-grey icon-evaluate_fill" wx:for="{{item.path}}"  wx:for-item="items">
+    
+    <view class="content bg-grey shadow-blur">
+        {{items.name}}
+    </view>
+  </view>
+ 
+  
+</view>
